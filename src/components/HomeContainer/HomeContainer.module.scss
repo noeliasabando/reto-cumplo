@@ -1,0 +1,44 @@
+body {
+    margin: 0 50px;
+    .nav {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 800;
+      padding: 20px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding-bottom: 10px;
+  
+      .titlePage {
+        grid-column: 2 / span 2;
+      }
+    }
+    .priceToday {
+      text-align: center;
+      margin-top: 0;
+      font-size: 25px;
+    }
+    .containerData {
+      display: flex;
+      justify-content: center;
+      font-size: larger;
+
+      .data {
+        margin: 20px 15px 0 15px;
+      }
+      .iconUp {
+        color: green;
+      }
+      .iconDown {
+        color: red;
+      }
+    }
+  
+    @media(max-width: 640px) {
+      .nav {
+        .titlePage {
+          grid-column: 1 / span 2;
+        }
+      }
+    }
+  }
